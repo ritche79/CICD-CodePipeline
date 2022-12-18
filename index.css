@@ -1,0 +1,50 @@
+header p {
+	margin: 0;
+}
+header {
+	padding-top: 20px;
+	
+	color:#808000 ;
+	font-size: 40;
+	
+}
+
+
+/*Site Navigation */
+.site-nav {
+	padding-top: 20px;
+}
+
+.site-nav ul {
+	margin: 0;
+	padding: 0;
+}
+.site-nav li {
+	padding: 5px;
+	list-style: none;
+	float: left;
+}
+.site-nav a {
+	display: block;
+	border: solid #e5e9dc;
+	padding: 10px 20px;
+	color:#fecf6a  ;
+	text-decoration: none;
+	border-bottom: none;
+}
+.site-nav a:hover {
+	background-color:#e5e9dc;
+}
+/* End Site Navigation*/
+.fix {clear: both;}
+.group:before,
+.group:after {
+	content: "";
+	display: table;
+}
+.group:after {
+	clear: both;
+}
+.group {
+	zoom: 1;
+}
