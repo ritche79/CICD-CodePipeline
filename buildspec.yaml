@@ -1,0 +1,23 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.8 #it will install python 3.8 on the ubuntu server 
+  pre_build:
+    commands:
+      - echo WE ARE ENTERING THE PREBUILD PHASE...
+      - echo checking the python version installed
+      - python --version
+  build:
+    commands:
+      - echo ***Build started on `date` ***
+      - pwd
+      - echo May 2022
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - ls -l
+artifacts:
+  files:
+    - '**/*'# zip pack everything
